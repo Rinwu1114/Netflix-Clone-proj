@@ -1,3 +1,4 @@
+
 .title-cards{
     margin: 50px 0 30px 0;
 }
@@ -9,12 +10,20 @@
 .cardlist{
     display: flex;
     gap: 10px;
-    overflow-x: scroll;
+    overflow: visible;
     scrollbar-width: none;
+    position: relative;
 }
 
 .cardlist::-webkit-scrollbar{
     display: none;
+
+}
+
+.card:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .cardlist img{
