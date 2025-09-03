@@ -22,11 +22,11 @@ const Home = () => {
             immportal enemy.
           </p>
           <div className="hero__btn">
-            <button className="btn">
+            <button onClick={() => {alert("Not implemented yet")}} className="btn">
               <img src={play_icon} alt="" />
               Play
             </button>
-            <button className="btn dark">
+            <button onClick={() => {alert("Not implemented yet")}} className="btn dark">
               <img src={info_icon} alt="" />
               More Info
             </button>

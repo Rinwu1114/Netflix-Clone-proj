@@ -25,6 +25,11 @@
     max-width: 700px;
     font-size: 18px;
     margin-bottom: 20px;
+    text-shadow:
+    0px 1px 0 black,  /* Top-left shadow */
+     1px 0px 0 black,  /* Top-right shadow */
+    -0.5px  1px 0 black,  /* Bottom-left shadow */
+     0px  0px 0 black;  /* Bottom-right shadow */
 }
 
 .hero__btn{
@@ -68,4 +73,53 @@
 
 .more__cards{
     padding-left: 6%;
+}
+
+@media (max-width: 1024px){
+
+    .hero__caption .title-cards{
+        display: none;
+    }
+
+    .hero__btn{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    .hero__caption{
+        padding-left: 4%;
+    }
+
+    .caption__img{
+        margin-bottom: 10px;
+        width: 40%;
+    }
+    
+    .hero__caption p{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .btn img{
+        width: 20px;
+    }
+
+    .more__cards{
+        padding-left: 4%;
+    }
+}
+
+@media (max-width: 500px) {
+    .caption__img{
+        display: none;
+    }
+    .hero__btn .btn img{
+        width: 18px;
+    }
+    .hero__btn .btn{
+        padding: 6px 12px;
+        gap: 5px;
+        font-size: 12px;
+    }
 }

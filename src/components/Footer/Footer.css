@@ -33,3 +33,14 @@
     font-size: 14px;
     color: #6d6d6e;
 }
+
+@media (max-width: 768px){
+    .footer__icons img{
+        width: 26px;
+    }
+    .footer ul{
+        grid-template-columns: auto auto;
+        gap: 14px;
+        font-size: 16px;
+    }
+}

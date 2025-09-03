@@ -31,7 +31,7 @@
 }
 
 .navbar__left ul li{
-    cursor: pointer;
+    cursor: not-allowed;
 }
 
 .navbar__right{
@@ -72,13 +72,62 @@
 }
 
 .navbar .dropdown p{
-    font-size: 13px;
+    font-size: 14px;
     cursor: pointer;
-
+    background: #191919;
+    padding: 12px;
 }
 
 .navbar__profile:hover .dropdown{
     display: visible;
     opacity: 100;
     text-decoration: underline;
+}
+
+.nav__dark{
+    background: #191919;
+}
+
+@media (max-width: 1024px){
+    .navbar__left ul{
+        gap: 16px;
+        font-size: 12px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px){
+    .navbar{
+        padding: 20px 4%;
+    }
+
+    .navbar__left ul{
+        display: none;
+    }
+    
+    .navbar img{
+        height: 25px;
+    }
+
+    .navbar__profile{
+        width: 50px;
+    }
+}
+
+@media (max-width: 500px){
+    .navbar img{
+        height: 20px;
+    }
+
+    .navbar__right{
+        gap: 10px;
+    }
+
+    .navbar__profile{
+        width: 32px;
+    }
+    .navbar .dropdown p{
+        font-size: 12px;
+        padding: 8px;
+    }
 }
